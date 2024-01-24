@@ -1,0 +1,2 @@
+spring.data.mongodb.uri: mongodb+srv://anand1st:<password>@cluster0.61d9ws0.mongodb.net/moh_tot?retryWrites=true&w=majority
+
