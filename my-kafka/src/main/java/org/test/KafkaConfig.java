@@ -3,7 +3,7 @@ package org.test;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.EnableKafka;
 import org.springframework.kafka.annotation.KafkaListener;
-import org.test.dto.SmsMessage;
+import org.test.models.SmsMessage;
 
 @lombok.extern.slf4j.Slf4j
 @Configuration

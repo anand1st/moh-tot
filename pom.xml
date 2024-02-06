@@ -16,6 +16,7 @@
         <module>my-first-rest-api</module>
         <module>my-mongodb</module>
         <module>my-kafka</module>
+        <module>data-model</module>
     </modules>
     <properties>
         <maven.compiler.release>21</maven.compiler.release>

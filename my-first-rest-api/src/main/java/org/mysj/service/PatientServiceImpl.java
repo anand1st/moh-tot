@@ -20,17 +20,15 @@ class PatientServiceImpl implements PatientService {
         entity.setPatientId(patient.getPatientId());
         entity.setAge(patient.getAge());
         entity.setName(patient.getName());
+        entity.setContactNo(patient.getContactNo());
         return patientRepo.save(entity).getId();
     }
 
     @Override
     public PatientDto getPatient(Long id) {
         var entity = patientRepo.findById(id).orElseThrow();
-        var patient = new PatientDto();
-        patient.setPatientId(entity.getPatientId());
-        patient.setName(entity.getName());
-        patient.setAge(entity.getAge());
-        return patient;
+        return new PatientDto(entity.getPatientId(), entity.getName(),
+                entity.getAge(), entity.getContactNo());
     }
 
     @Override
@@ -50,6 +48,9 @@ class PatientServiceImpl implements PatientService {
         if (patient.getPatientId() != null) {
             entity.setPatientId(patient.getPatientId());
         }
+        if (patient.getContactNo() != null) {
+            entity.setContactNo(patient.getContactNo());
+        }
         patientRepo.save(entity);
     }
 
@@ -57,6 +58,6 @@ class PatientServiceImpl implements PatientService {
     public PatientDto searchPatient(String patientId) {
         var patient = patientRepo.findByPatientId(patientId).orElseThrow();
         return new PatientDto(patient.getPatientId(), patient.getName(),
-                patient.getAge());
+                patient.getAge(), patient.getContactNo());
     }
 }

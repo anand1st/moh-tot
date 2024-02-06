@@ -2,6 +2,8 @@ package org.mysj.domain;
 
 import jakarta.persistence.*;
 
+@lombok.EqualsAndHashCode(callSuper = true)
+@lombok.Data
 @Entity
 @Table(name = "PATIENT", indexes = @Index(unique = true, columnList = "PATIENT_ID"))
 public class PatientEntity extends AbstractJpaAuditable<Long> {
@@ -12,28 +14,6 @@ public class PatientEntity extends AbstractJpaAuditable<Long> {
     private Integer age;
     @Column(name = "NAME")
     private String name;
-
-    public String getPatientId() {
-        return patientId;
-    }
-
-    public void setPatientId(String patientId) {
-        this.patientId = patientId;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    @Column(name = "CONTACT_NO")
+    private String contactNo;
 }

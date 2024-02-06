@@ -1,8 +1,8 @@
-package org.test.dto;
+package org.test.models;
 
-@lombok.Data
-@lombok.NoArgsConstructor
 @lombok.AllArgsConstructor
+@lombok.NoArgsConstructor
+@lombok.Data
 public class SmsMessage {
 
     private String phoneNumber;

@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccac313a-ac9a-46d6-ac0a-95ab33d16942" name="Changes" comment="Updated exercises">
+      <change afterPath="$PROJECT_DIR$/data-model/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data-model/src/main/java/org/test/models/SmsMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/AppointmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/dto/AppointmentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/service/AppointmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/service/AppointmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-first-rest-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-rest-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/domain/PatientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/domain/PatientEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/dto/PatientDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/dto/PatientDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/service/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/service/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-first-rest-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-rest-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-kafka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my-kafka/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-kafka/src/main/java/org/test/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-kafka/src/main/java/org/test/KafkaConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-kafka/src/main/java/org/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-kafka/src/main/java/org/test/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-kafka/src/main/java/org/test/dto/SmsMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +70,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.mysj.service" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.org.test.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.mysj.Main" />
