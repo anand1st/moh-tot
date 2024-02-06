@@ -11,21 +11,21 @@ import org.test.dto.SmsMessage;
 class KafkaConfig {
 
     static final String SMS = "sms";
-    static final String GRP_SMS = "sms";
-    static final String GRP_SMS2 = "sms2";
+    static final String SEND_SMS_GROUP_ID = "sendSms";
+    static final String LOG_SMS_GROUP_ID = "logSms";
 
-    @KafkaListener(topics = SMS, groupId = GRP_SMS)
-    void sendSmsMessage1(SmsMessage sms) {
-        log.info("sendSmsMessage1: {}", sms);
+    @KafkaListener(topics = SMS, groupId = SEND_SMS_GROUP_ID)
+    void sendSmsMessage(SmsMessage sms) {
+        log.info("sendSmsMessage: {}", sms);
     }
 
-//    @KafkaListener(topics = SMS, groupId = GRP_SMS)
-//    void sendSmsMessage2(SmsMessage sms) {
-//        log.info("sendSmsMessage2: {}", sms);
-//    }
+    @KafkaListener(topics = SMS, groupId = SEND_SMS_GROUP_ID)
+    void sendSmsMessage2(SmsMessage sms) {
+        log.info("sendSmsMessage2: {}", sms);
+    }
 
-    @KafkaListener(topics = SMS, groupId = GRP_SMS2)
-    void sendSmsMessage3(SmsMessage sms) {
-        log.info("sendSmsMessage3: {}", sms);
+    @KafkaListener(topics = SMS, groupId = LOG_SMS_GROUP_ID)
+    void logSmsMessage(SmsMessage sms) {
+        log.info("logSmsMessage: {}", sms);
     }
 }

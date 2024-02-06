@@ -20,6 +20,10 @@ public class Main implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        IntStream.range(1, 10).forEach(i -> kafkaTemplate.send(KafkaConfig.SMS, new SmsMessage("+60123456789", "Hello Kawan " + i)));
+        IntStream.range(1, 10).forEach(i ->
+                kafkaTemplate.send(KafkaConfig.SMS,
+                        new SmsMessage(
+                                "+60123456789",
+                                "Hello Kawan " + i)));
     }
 }

@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccac313a-ac9a-46d6-ac0a-95ab33d16942" name="Changes" comment="Updated exercises">
-      <change afterPath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/service/PatientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/service/PatientServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-kafka/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-kafka/src/main/java/org/test/KafkaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-kafka/src/main/java/org/test/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-kafka/src/main/java/org/test/dto/SmsMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-kafka/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-first-rest-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-rest-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-rest-api/src/main/java/org/mysj/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-first-rest-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/my-first-rest-api/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-kafka/src/main/java/org/test/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-kafka/src/main/java/org/test/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-kafka/src/main/java/org/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-kafka/src/main/java/org/test/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
