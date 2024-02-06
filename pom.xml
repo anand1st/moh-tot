@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.0</version>
+        <version>3.2.2</version>
     </parent>
     <groupId>org.mysj</groupId>
     <artifactId>moh-tot</artifactId>
@@ -15,6 +15,7 @@
     <modules>
         <module>my-first-rest-api</module>
         <module>my-mongodb</module>
+        <module>my-kafka</module>
     </modules>
     <properties>
         <maven.compiler.release>21</maven.compiler.release>
