@@ -1,4 +1,4 @@
-package org.mysj.domain;
+package org.mysj.commons.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;

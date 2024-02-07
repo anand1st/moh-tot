@@ -1,6 +1,7 @@
 package org.mysj.domain;
 
 import jakarta.persistence.*;
+import org.mysj.commons.domain.AbstractJpaAuditable;
 
 @lombok.EqualsAndHashCode(callSuper = true)
 @lombok.Data

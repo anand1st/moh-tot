@@ -1,4 +1,4 @@
-package org.mysj.domain;
+package org.mysj.commons.domain;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

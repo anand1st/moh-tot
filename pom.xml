@@ -18,9 +18,17 @@
         <module>my-kafka</module>
         <module>data-model</module>
         <module>appointment-ms</module>
+        <module>commons-ms</module>
     </modules>
     <properties>
         <maven.compiler.release>21</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
 </project>
