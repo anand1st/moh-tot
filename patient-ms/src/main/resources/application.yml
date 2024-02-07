@@ -1,0 +1,11 @@
+server.port: 8080
+
+spring:
+  data:
+    redis:
+      url: rediss://default:c3c001edbd0f4ef5a33b90883f8361f5@apn1-open-ocelot-33199.upstash.io:33199
+  datasource:
+    url: jdbc:mysql://localhost:3306/moh_tot
+    username: root
+    password: root
+  jpa.hibernate.ddl-auto: update

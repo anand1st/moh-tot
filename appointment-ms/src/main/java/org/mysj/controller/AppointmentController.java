@@ -1,4 +1,4 @@
-package org.mysj;
+package org.mysj.controller;
 
 import org.mysj.dto.AppointmentDto;
 import org.mysj.service.AppointmentService;

@@ -2,10 +2,10 @@ package org.mysj;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.kafka.annotation.EnableKafka;
+import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
-@EnableKafka
+@EnableCaching
 public class Main {
 
     public static void main(String[] args) {

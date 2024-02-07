@@ -5,14 +5,11 @@ import org.mysj.domain.PatientRepo;
 import org.mysj.dto.PatientDto;
 import org.springframework.stereotype.Service;
 
+@lombok.RequiredArgsConstructor
 @Service
 class PatientServiceImpl implements PatientService {
 
     private final PatientRepo patientRepo;
-
-    PatientServiceImpl(PatientRepo patientRepo) {
-        this.patientRepo = patientRepo;
-    }
 
     @Override
     public Long createPatient(PatientDto patient) {
