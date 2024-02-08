@@ -1,7 +1,9 @@
 package org.mysj.controller;
 
+import jakarta.validation.Valid;
 import org.mysj.dto.PatientDto;
 import org.mysj.service.PatientService;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -14,7 +16,7 @@ class PatientController {
     }
 
     @PostMapping("/patient")
-    Long createPatient(@RequestBody PatientDto patient) {
+    Long createPatient(@RequestBody @Valid PatientDto patient) {
         return patientService.createPatient(patient);
     }
 

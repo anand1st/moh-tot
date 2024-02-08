@@ -18,6 +18,7 @@ class PatientServiceImpl implements PatientService {
         entity.setAge(patient.getAge());
         entity.setName(patient.getName());
         entity.setContactNo(patient.getContactNo());
+        entity.setEmail(patient.getEmail());
         return patientRepo.save(entity).getId();
     }
 
@@ -25,7 +26,7 @@ class PatientServiceImpl implements PatientService {
     public PatientDto getPatient(Long id) {
         var entity = patientRepo.findById(id).orElseThrow();
         return new PatientDto(entity.getPatientId(), entity.getName(),
-                entity.getAge(), entity.getContactNo());
+                entity.getAge(), entity.getContactNo(), entity.getEmail());
     }
 
     @Override
@@ -48,6 +49,9 @@ class PatientServiceImpl implements PatientService {
         if (patient.getContactNo() != null) {
             entity.setContactNo(patient.getContactNo());
         }
+        if (patient.getEmail() != null) {
+            entity.setEmail(patient.getEmail());
+        }
         patientRepo.save(entity);
     }
 
@@ -55,6 +59,6 @@ class PatientServiceImpl implements PatientService {
     public PatientDto searchPatient(String patientId) {
         var patient = patientRepo.findByPatientId(patientId).orElseThrow();
         return new PatientDto(patient.getPatientId(), patient.getName(),
-                patient.getAge(), patient.getContactNo());
+                patient.getAge(), patient.getContactNo(), patient.getEmail());
     }
 }

@@ -17,4 +17,6 @@ public class PatientEntity extends AbstractJpaAuditable<Long> {
     private String name;
     @Column(name = "CONTACT_NO")
     private String contactNo;
+    @Column(name = "EMAIL")
+    private String email;
 }
